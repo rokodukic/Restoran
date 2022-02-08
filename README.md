@@ -2,4 +2,3 @@
 
 LINK TO WEBISTE:
 
-https://rokodukic.github.io/govno/
