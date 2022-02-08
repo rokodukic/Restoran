@@ -1,0 +1,597 @@
+*{
+    padding:0;
+    margin:0;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 550;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-image:linear-gradient(rgba(41, 33, 33, 0.5), rgba(41, 33, 33, 0.5)), url(./images/food-img.jpg);
+    width: 100%;
+    background-position: 50%;
+}
+
+a{
+    color: inherit;
+    padding-inline: 20px;
+    background: none;
+    padding: 8px 15px 8px 15px;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid transparent;
+}
+a:hover{
+    border: 1px solid white;
+}
+a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    background: brown;
+    transition: 0.8s;
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+
+/* Header */
+.header{
+    background-color: rgba(0, 0, 0, 0.322);
+    width: 100%;
+    background-size: cover;
+}
+
+.nav-icon{
+    background: none;
+    padding: 8px 15px 8px 15px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid transparent;
+}
+.nav-icon:hover{
+    border: 1px solid white;
+}
+.nav-icon::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    background: brown;
+    transition: 0.8s;
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+
+.logo{
+    font-size: 1.6rem;
+}
+.left {
+    padding: 20px 0 20px 40px;
+    display: flex;
+    align-items: center;
+}
+.right{
+    font-size: 1.5rem;
+    margin:50px;
+}
+
+.circle{
+    background: white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin: 0 10px 0 20px;
+}
+
+.menu{
+    display: none;
+}
+
+.nav{
+    width: 100%;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-text{
+    color: white;    
+    position: relative;   
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Main section */
+
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 11rem 1rem 1rem 1rem;
+    text-align: center;
+}
+
+.restoran-cen{
+    font-weight: 700;
+    width: 100%;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+p{
+    width: 100%;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.klik-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.klik{
+    font-size: 1.5rem;
+    display: inline-block;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    outline: 1px solid white;
+    background-color: #6A4033;
+    padding: 20px 70px 20px 70px;
+}
+/* arrow */
+.arrow{
+    display: flex;
+    justify-content: center;
+    margin-top: 3.4rem;
+}
+
+/*mob */
+
+@media only screen and (max-height:858px){
+    .hero{
+        height: 220px;
+    }
+    .arrow{
+        margin-top: 6rem;
+    }
+    .klik{
+        font-size: 5rem;
+    } 
+}
+@media only screen and (max-height: 730px){
+    .hero{
+        height: 100px;
+    }
+    .arrow{
+        margin-top: 6rem;
+    }
+}
+@media only screen and (max-height: 650px){
+    .hero{
+        height: 50px;
+    }
+    .arrow{
+        margin-top: 6rem;
+    }
+    .klik{
+        font-size: px;
+    }
+}
+@media only screen and (max-height: 590px){ 
+    .hero{
+        height: 100px;
+    }
+    .arrow{
+        margin-top: 6rem;
+    }
+    .klik{
+        font-size: 5rem;
+    } 
+}
+
+
+@media only screen and (min-width:52px) and (max-width:172px){
+    .nav {
+        display: block;
+    }
+    h1.restoran-cen{
+        font-size: 20px;
+    }
+    p {
+        font-size: px;
+    }
+    .right{
+        display: none;
+    }
+    .klik{
+        font-size: 1.2rem;
+    }
+    .circle{
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        margin: 0 10px 0 1px;
+    }
+    .left{
+        height: 80px;
+    }
+    .logo{
+        font-size: 1rem;
+    }
+    .menu{
+        display: flex;
+        float: right;
+        top: 35px;
+        right: 20px;
+        position: absolute;
+    }
+
+}   
+@media only screen and (min-width:101px) and (max-width:150px){
+    .nav {
+        display: block;
+    }
+    h1.restoran-cen{
+        font-size: 45px;
+    }
+    p {
+        font-size: 21px;
+    }
+    .right{
+        display: none;
+    }
+    .klik{
+        font-size: 1.2rem;
+    }
+    .circle{
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        margin: 0 10px 0 20px;
+    }
+    .left{
+        height: 80px;
+    }
+    .logo{
+        font-size: 1.3rem;
+    }
+    .menu{
+        display: flex;
+        float: right;
+        top: 35px;
+        right: 20px;
+        position: absolute;
+    }
+
+}  
+@media only screen and (min-width: 151px) and (max-width: 320px){
+    .nav {
+        display: block;
+    }
+    h1.restoran-cen{
+        font-size: 30px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .right{
+        display: none;
+    }
+    .klik{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        width: 200px;
+        height: 60px;
+    }
+    .circle{
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        margin: 0 5px 0 1px;
+    }
+    .left{
+        height: 80px;
+        padding: 20px 0 20px 10px;
+    }
+    .logo{
+        font-size: 1rem;
+        
+    }
+    .menu{
+        display: flex;
+        float: right;
+        top: 29px;
+        right: 20px;
+        position: absolute;
+    }
+}
+@media only screen and (min-width:321px) and (max-width:450px){
+    .nav {
+        display: block;
+    }
+    h1.restoran-cen{
+        font-size: 40px;
+    }
+    p {
+        font-size: 100%;
+    }
+    .right{
+        display: none;
+    }
+    .klik{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        width: 220px;
+        height: 60px;
+        margin: 20px 0 0 0;
+    }
+    .circle{
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        margin: 0 10px 0 20px;
+    }
+    .left{
+        height: 80px;
+        padding: 0;
+    }
+    .logo{
+        font-size: 1.3rem;
+    }
+    .menu{
+        display: flex;
+        float: right;
+        top: 29px;
+        right: 20px;
+        position: absolute;
+    }
+
+} 
+
+
+@media only screen and (min-width:451px) and (max-width:511px){
+
+    .nav {
+        display: block;
+    }
+    h1.restoran-cen{
+        font-size: 50px;
+    }
+    p {
+        font-size: 18px;
+    }
+    .right{
+        display: none;
+    }
+    .klik{
+        font-size: 1.3rem;
+    }
+    .circle{
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        margin: 0 10px 0 20px;
+    }
+    .left{
+        height: 80px;
+        padding: 0;
+    }
+    .logo{
+        font-size: 1.2rem;
+    }
+    .menu{
+        display: flex;
+        float: right;
+        top: 29px;
+        right: 20px;
+        position: absolute;
+    }
+
+} 
+@media only screen and (min-width:512px) and (max-width:700px){
+
+    .nav {
+        display: block;
+    }
+    h1.restoran-cen{
+        font-size: 50px;
+    }
+    p {
+        font-size: 17px;
+    }
+    .right{
+        display: none;
+    }
+    .klik{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        width: 350px;
+        height: 70px;
+    }
+    .circle{
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        margin: 0 10px 0 20px;
+    }
+    .left{
+        height: 80px;
+        padding: 0;
+    }
+    .logo{
+        font-size: 1.4rem;
+    }
+    .menu{
+        display: flex;
+        float: right;
+        top: 29px;
+        right: 20px;
+        position: absolute;
+    }
+
+} 
+@media only screen and (min-width:701px) and (max-width:805px){
+    .nav {
+        display: block;
+    }
+    h1.restoran-cen{
+        font-size: 65px;
+    }
+    p {
+        font-size: 20px;
+    }
+    .right{
+        display: none;
+    }
+    .klik{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        width: 400px;
+        height: 75px;
+    }
+    .circle{
+        border-radius: 50%;
+        width: 33px;
+        height: 33px;
+        margin: 0 10px 0 20px;
+    }
+    .left{
+        height: 80px;
+        padding: 0;
+    }
+    .logo{
+        font-size: 1.3rem;
+    }
+    .menu{
+        display: flex;
+        float: right;
+        top: 29px;
+        right: 20px;
+        position: absolute;
+    }
+
+} 
+@media only screen and (min-width:806px) and (max-width:1066px){
+    .nav {
+        display: block;
+    }
+    h1.restoran-cen{
+        font-size: 80px;
+    }
+    p {
+        font-size: 23px;
+    }
+    .right{
+        display: none;
+    }
+    .klik{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.6rem;
+        width: 450px;
+        height: 80px;
+    }
+    .circle{
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        margin: 0 10px 0 20px;
+    }
+    .left{
+        height: 80px;
+        padding: 0;
+    }
+    .logo{
+        font-size: 1.5rem;
+    }
+    .menu{
+        display: flex;
+        float: right;
+        top: 29px;
+        right: 20px;
+        position: absolute;
+    }
+
+} 
+@media only screen and (min-width:1067px) and (max-width:1325px){
+    .nav {
+        display: block;
+    }
+    h1.restoran-cen{
+        font-size: 80px;
+    }
+    p {
+        font-size: 23px;
+    }
+    .right{
+        display: none;
+    }
+    .klik{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.6rem;
+        width: 450px;
+        height: 80px;
+    }
+    .circle{
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        margin: 0 10px 0 20px;
+    }
+    .left{
+        height: 80px;
+        padding: 0;
+    }
+    .logo{
+        font-size: 1.5rem;
+    }
+    .menu{
+        display: flex;
+        float: right;
+        top: 29px;
+        right: 20px;
+        position: absolute;
+    }
+
+} 
+
+
+
+
